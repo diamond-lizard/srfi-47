@@ -1,0 +1,85 @@
+[[tags: egg]]
+
+== srfi-47
+
+[[toc:]]
+
+=== Description
+
+An alternative arrays package conforming to [[http://srfi.schemers.org/srfi-47/srfi-47.html|SRFI-47]].
+
+=== Author
+
+Aubrey Jaffer, ported to Chicken by [[/users/felix winkelmann|felix winkelmann]]
+
+=== Requirements
+
+None
+
+=== Download
+
+[[http://code.call-cc.org/legacy-eggs/3/srfi-47.egg|srfi-47.egg]]
+
+=== Documentation
+
+The full specification can be found at
+[[http://srfi.schemers.org/srfi-47/srfi-47.html|the SRFI website]].
+The array prototypes for complex numbers are not supported
+({{ac64}}). The 64-bit signed and unsigned array prototypes {{au64}}
+and {{as64}}) are provided but may not support the full range of
+numerical values on 32-bit architevtures.
+
+Additionally, the following procedure is defined:
+
+<procedure>(array-store ARRAY)</procedure>
+
+Returns the underlying storage object, which may be a vector or a
+[[http://srfi.schemers.org/&srfi/srfi-4.html|SRFI-4]] number vector.
+
+Note: this array package is ''not'' compatible with the default array
+library ({{srfi-25}}) that is provided with the base system. Don't use
+these two libraries together in the same program.
+
+=== Examples
+
+<enscript highlight="scheme">
+(use srfi-47)
+
+(define fred (make-array '#(#f) 8 8))
+(define freds-diagonal
+  (make-shared-array fred (lambda (i) (list i i)) 8))
+(array-set! freds-diagonal 'foo 3)
+(array-ref fred 3 3)
+ => foo
+
+(define freds-center
+  (make-shared-array fred (lambda (i j) (list (+ 3 i) (+ 3 j)))
+                     2 2))
+(array-ref freds-center 0 0)
+ => foo
+</enscript>
+
+=== Changelog
+
+* 1.1 Fixed invalid implementation of {{array?}} [Thanks to Kon Lovett]
+* 1.0 Initial release
+
+=== License
+
+  Copyright (C) 2001, 2003 Aubrey Jaffer
+  
+  Permission to copy this software, to modify it, to redistribute it,
+  to distribute modified versions, and to use it for any purpose is
+  granted, subject to the following restrictions and understandings.
+  
+  1.  Any copy made of this software must include this copyright notice
+  in full.
+  
+  2.  I have made no warranty or representation that the operation of
+  this software will be error-free, and I am under no obligation to
+  provide any services, by way of maintenance, update, or otherwise.
+  
+  3.  In conjunction with products arising from the use of this
+  material, there shall be no use of my name in any advertising,
+  promotional, or sales literature without prior written consent in
+  each case.
