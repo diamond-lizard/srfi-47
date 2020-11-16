@@ -1,0 +1,10 @@
+;;; srfi-47.egg -*- Scheme -*- vim: ft=scheme:
+
+((author "Aubrey Jaffer")
+ (maintainer "Sergey Goldgaber")
+ (synopsis "SRFI-47: Arrays")
+ (version "2.0")
+ (category data)
+ (test-dependencies test)
+ (license "BSD")
+ (components (extension srfi-47)))
