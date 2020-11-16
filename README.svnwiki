@@ -17,10 +17,6 @@ An alternative arrays package conforming to [[http://srfi.schemers.org/srfi-47/s
 
 None
 
-=== Download
-
-[[http://code.call-cc.org/legacy-eggs/3/srfi-47.egg|srfi-47.egg]]
-
 === Documentation
 
 The full specification can be found at
