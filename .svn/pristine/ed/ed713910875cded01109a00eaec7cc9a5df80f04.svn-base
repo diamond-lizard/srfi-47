@@ -1,9 +1,0 @@
-;;; srfi-47.meta -*- Hen -*-
-((egg "srfi-47.egg")
- (files "srfi-47.setup" "srfi-47.scm" "srfi-47.html")
- (author "Aubrey Jaffer")
- (synopsis
-   "SRFI-47 arrays")
- (license "BSD")
- (doc-from-wiki)
- (category data))
