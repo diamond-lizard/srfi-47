@@ -61,6 +61,7 @@ these two libraries together in the same program.
 
 === Changelog
 
+* [[https://github.com/diamond-lizard/srfi-47/releases/tag/2.0|2.0]] - Ported to Chicken Scheme 5
 * 1.1 Fixed invalid implementation of {{array?}} [Thanks to Kon Lovett]
 * 1.0 Initial release
 
