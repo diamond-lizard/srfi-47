@@ -3,6 +3,7 @@
   (import (chicken base))
   (import (chicken module))
   (import (chicken fixnum))
+  (import (srfi-4))
 
   (export make-array array-ref array-set! make-shared-array array?
          array-rank array-dimensions array-in-bounds? array-store

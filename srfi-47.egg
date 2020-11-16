@@ -5,6 +5,7 @@
  (synopsis "SRFI-47: Arrays")
  (version "2.0")
  (category data)
+ (dependencies srfi-4)
  (test-dependencies test)
  (license "BSD")
  (components (extension srfi-47)))
