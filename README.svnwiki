@@ -10,7 +10,8 @@ An alternative arrays package conforming to [[http://srfi.schemers.org/srfi-47/s
 
 === Author
 
-Aubrey Jaffer, ported to Chicken by [[/users/felix winkelmann|felix winkelmann]]
+* Aubrey Jaffer, ported to Chicken by [[/users/felix winkelmann|felix winkelmann]]
+* Ported to Chicken 5 by Sergey Goldgaber
 
 === Requirements
 
