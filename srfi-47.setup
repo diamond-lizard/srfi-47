@@ -1,0 +1,3 @@
+(compile -s -O2 -d1 srfi-47.scm)
+(install-extension 'srfi-47 '("srfi-47.so" "srfi-47.html") 
+		   '((version 1.1) (documentation "srfi-47.html")))

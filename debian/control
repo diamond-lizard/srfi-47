@@ -1,0 +1,22 @@
+Source: chicken-srfi-47
+Section: libs
+Priority: optional
+Maintainer: Ivan Raikov <raikov@oist.jp>
+Build-Depends: debhelper (>> 3.0.0), chicken-bin (>= 2.4), libchicken-dev (>= 2.4)
+Standards-Version: 3.6.2
+
+Package: chicken-srfi-47
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, chicken-bin (>= 2.4)
+Description: An array implementation conforming to SRFI-47
+ A Chicken Scheme implementation of SRFI 47.  It incorporates all the
+ homogeneous vector types from SRFI-4 (Homogeneous numeric vector
+ datatypes), and adds complex types composed of two 32-bit or two
+ 64-bit floating-point numbers, a uniform character array type, and a
+ uniform boolean array type. Multi-dimensional uniform-arrays subsume
+ homogeneous vectors as the one-dimensional case, obviating the need
+ for SRFI-4.
+ .
+ Homepage: http://www.call-with-current-continuation.org/eggs/srfi-47.html
+
